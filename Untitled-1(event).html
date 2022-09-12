@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-image {
+  background-image: url("data:image/jpeg;base64,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");
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+</style>
+</head>
+<body>
+
+<div class="hero-image">
+  <div class="hero-text">
+    <header class="text-white-600 body-font">
+      <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a class="flex title-font font-medium items-center text-white-900 mb-4 md:mb-0">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
+                  stroke-linejoin="round" stroke-width="2"
+                  class="w-10 h-10 text-black p-2 bg-black-500 rounded-full" viewBox="0 0 24 24">
+
+                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+
+              </svg>
+              <span class="ml-3 text-xl">WebBot</span>
+          </a>
+          <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+              <a href="file:///E:/css/Untitled-123.html"class="mr-5 hover:text-blue-900">Home </a><br>
+              <a href="file:///E:/css/Untitled-1(resite).html"class="mr-5 hover:text-blue-900">About </a><br>
+              <a href="file:///E:/css/Untitled-1(contact).html"class="mr-5 hover:text-blue-900">Quaries </a><br>
+              <a href="https://google.com"class="mr-5 hover:text-blue-900">Feedback </a><br>
+
+          </nav>
+          <button
+              class="inline-flex items-center bg-black-100 border-0 py-1 px-3 focus:outline-none hover:bg-blue-200 rounded text-base mt-4 md:mt-0"><a
+                  href="file:///E:/css/Untitled-1(sign%20in).html">Sign IN</a>
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                  stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+          </button>
+      </div>
+  </header>
+    <section class="text-white-600 body-font">
+        <div class="container px-5 py-24 mx-auto flex flex-wrap">
+          <div class="flex w-full mb-20 flex-wrap">
+            <h1 class="sm:text-3xl text-2xl font-medium title-font text-white-900 lg:w-1/3 lg:mb-0 mb-4">New EVENTS are Here</h1>
+
+          </div>
+          <div class="flex flex-wrap md:-m-2 -m-1">
+            <div class="flex flex-wrap w-1/2">
+              <div class="md:p-2 p-1 w-1/2">
+                <img alt="gallery" class="w-full object-cover h-full object-center block" src="https://media.istockphoto.com/illustrations/web-development-and-coding-concept-illustration-id1312450277?k=20&m=1312450277&s=612x612&w=0&h=RwfbWE6C6smmPHHr2akD4-8RRugeilqyLFr0T8utdiI=">
+              </div>
+              <div class="md:p-2 p-1 w-1/2">
+                <img alt="gallery" class="w-full object-cover h-full object-center block" src="https://media.istockphoto.com/vectors/computer-programming-isometric-vector-illustration-vector-id1217467491?k=20&m=1217467491&s=612x612&w=0&h=jLr5DrHW7y8m3bp5A6Wm_0b00Pa0RqZsrjo5l_PdBX0=">
+              </div>
+              <div class="md:p-2 p-1 w-full">
+                <img alt="gallery" class="w-full h-full object-cover object-center block" src="https://media.istockphoto.com/vectors/man-programmer-or-gui-designer-character-working-on-computer-with-vector-id1305858014?k=20&m=1305858014&s=612x612&w=0&h=C1m0zt0wgG8Qu8sbwLh5S1vu6utcOV1YwWHcDGdLc3k=">
+              </div>
+            </div>
+            <div class="flex flex-wrap w-1/2">
+              <div class="md:p-2 p-1 w-full">
+                <img alt="gallery" class="w-full h-full object-cover object-center block" src="https://media.istockphoto.com/vectors/global-world-planet-earth-concept-on-laptop-screen-vector-low-poly-vector-id1322151672?k=20&m=1322151672&s=612x612&w=0&h=mgT39de9EkE5-6B8HplDDMzqD3JU0rcelEaUgs9os48=">
+              </div>
+              <div class="md:p-2 p-1 w-1/2">
+                <img alt="gallery" class="w-full object-cover h-full object-center block" src="https://upload.wikimedia.org/wikipedia/commons/5/5c/New-Withrow-Gym-500-X-300.jpg">
+              </div>
+              <div class="md:p-2 p-1 w-1/2">
+                <img alt="gallery" class="w-full object-cover h-full object-center block" src="https://upload.wikimedia.org/wikipedia/commons/5/5c/New-Withrow-Gym-500-X-300.jpg">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="text-white-600 body-font">
+        <div class="container px-5 py-24 mx-auto flex flex-wrap">
+          <div class="lg:w-2/3 mx-auto">
+            <div class="flex flex-wrap w-full py-32 px-10 relative mb-4">
+              <img alt="gallery" class="w-full object-cover h-full object-center block opacity-25 absolute inset-0" src="https://media.istockphoto.com/photos/and-programming-development-technology-picture-id1344504510?k=20&m=1344504510&s=612x612&w=0&h=4FmSCSRj5KohaJ8W9ZBc4U2j9-KpdPGkztLZzFak2NU=">
+              <div class="text-center relative z-10 w-full">
+                <h2 class="text-2xl text-white-900 font-medium title-font mb-2">TECH Events</h2>
+                <a href="https://www.google.com/url?client=internal-element-cse&cx=006146290343284726124:ppo40w3y7yg&q=https://www.cuchd.in/campus-life/tech-invent.php&sa=U&ved=2ahUKEwj2hdjDxtT2AhVzwjgGHbL1AFkQFnoECAIQAQ&usg=AOvVaw22bRttLK3pPy93YLKKFzzA"class="mr-5 hover:text-white-900">Learn More </a><br>
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="flex flex-wrap -mx-2">
+              <div class="px-2 w-1/2">
+                <div class="flex flex-wrap w-full bg-white-100 sm:py-24 py-16 sm:px-10 px-6 relative">
+                  <img alt="gallery" class="w-full object-cover h-full object-center block opacity-25 absolute inset-0" src="https://media.istockphoto.com/photos/double-exposure-of-creative-artificial-intelligence-abbreviation-and-picture-id1221738106?k=20&m=1221738106&s=612x612&w=0&h=2KXyPPy9rX8yJauAHZC_q1NukYamON2_37HeKvuBAXA=">
+                  <div class="text-center relative z-10 w-full">
+                    <h2 class="text-xl text-white-900 font-medium title-font mb-2">Cultural Activities</h2>
+                    <a href="https://www.google.com/url?client=internal-element-cse&cx=006146290343284726124:ppo40w3y7yg&q=https://www.cuchd.in/campus-life/cultural.php&sa=U&ved=2ahUKEwj2hdjDxtT2AhVzwjgGHbL1AFkQFnoECAEQAQ&usg=AOvVaw2CgifWMTQrmkvi0j-oQ3A1"class="mr-5 hover:text-white-900">Learn More </a><br>
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="px-2 w-1/2">
+                <div class="flex flex-wrap w-full bg-white-100 sm:py-24 py-16 sm:px-10 px-6 relative">
+                  <img alt="gallery" class="w-full object-cover h-full object-center block opacity-25 absolute inset-0" src="https://media.istockphoto.com/photos/minimal-creative-style-4k-video-editor-window-concept-3d-rendering-picture-id1353670013?k=20&m=1353670013&s=612x612&w=0&h=HKWxYFLopaqsh_u6nBm-nlTUMvQEtssRbKwvvZPYTdI=">
+                  <div class="text-center relative z-10 w-full">
+                    <h2 class="text-xl text-white-900 font-medium title-font mb-2">Star EVENTS</h2>
+                    <a href="https://www.google.com/url?client=internal-element-cse&cx=006146290343284726124:ppo40w3y7yg&q=https://techinvent.cuchd.in/events.php&sa=U&ved=2ahUKEwj2hdjDxtT2AhVzwjgGHbL1AFkQFnoECAcQAQ&usg=AOvVaw1TvjcrWELP95dZRCy3FImY"class="mr-5 hover:text-white-900">Learn More </a><br>
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="text-white-600 body-font">
+        <div class="container px-5 py-24 mx-auto flex flex-wrap">
+          <div class="flex w-full mb-20 flex-wrap">
+          </div>
+          <div class="flex flex-wrap md:-m-2 -m-1">
+            <div class="flex flex-wrap w-1/2">
+              <div class="md:p-2 p-1 w-1/2">
+                <img alt="gallery" class="w-full object-cover h-full object-center block" src="https://media.istockphoto.com/photos/web-development-picture-id1363969967?k=20&m=1363969967&s=612x612&w=0&h=aoH2f2QFIDbBLecQzM1R18v-iDSaaexQhFTVkdjpDcg=">
+              </div>
+              <div class="md:p-2 p-1 w-1/2">
+                <img alt="gallery" class="w-full object-cover h-full object-center block" src="https://media.istockphoto.com/photos/global-technology-banner-picture-id1319242681?k=20&m=1319242681&s=612x612&w=0&h=NFkTgG9RYH_nTMgn4AarKUzx6LI4rtlwpjmFpeneluA=">
+              </div>
+              <div class="md:p-2 p-1 w-full">
+                <img alt="gallery" class="w-full h-full object-cover object-center block" src="https://media.istockphoto.com/photos/multi-exposure-of-abstract-graphic-coding-sketch-with-world-map-on-picture-id1216543020?k=20&m=1216543020&s=612x612&w=0&h=70tszOyV3u5AOkH5-Vw1c6kGQ5fNgL4pDQTSCjCAHDE=">
+              </div>
+            </div>
+            <div class="flex flex-wrap w-1/2">
+              <div class="md:p-2 p-1 w-full">
+                <img alt="gallery" class="w-full h-full object-cover object-center block" src="https://media.istockphoto.com/photos/digital-software-technology-application-development-picture-id1357137099?k=20&m=1357137099&s=612x612&w=0&h=IxZ_yRg9br_VzklM-I4QqMfeCMgAMvKL5a-CMB3PjGA=">
+              </div>
+              <div class="md:p-2 p-1 w-1/2">
+                <img alt="gallery" class="w-full object-cover h-full object-center block" src="https://media.istockphoto.com/photos/web-development-and-web-design-concept-in-neon-light-building-a-picture-id1297107318?k=20&m=1297107318&s=612x612&w=0&h=nFRTIRdf4Q0Eivn0dgO6Iy-X4lat9jNeu-Wuk8TUe7Y=">
+              </div>
+              <div class="md:p-2 p-1 w-1/2">
+                <img alt="gallery" class="w-full object-cover h-full object-center block" src="https://media.istockphoto.com/photos/creative-coding-concept-illustration-3d-rendering-picture-id1281835364?k=20&m=1281835364&s=612x612&w=0&h=hAjLna_mxNlv4QneX4LyQu_fSgH-iYRWGjn_PCbvE8Y=">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  </div>
+</div>
+
+
+</body>
+</html>
